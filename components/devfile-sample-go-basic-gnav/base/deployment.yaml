@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-go-basic-gnav
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:hnjv7-devfile-sample-go-basic-gnav
+      - image: quay.io/redhat-appstudio/user-workload@sha256:9524c36a40ee3cb685f4d51b295d75169a9a1c6831d61a99287dff0abee845f1
         name: my-go
         ports:
         - containerPort: 8081
