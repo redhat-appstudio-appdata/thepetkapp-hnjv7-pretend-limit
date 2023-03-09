@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-uypb
+  namespace: rh-ee-tpetkos-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:648522121abbe966826cfc85ff5a8cdc25672ed0d733571a70e54606f875ca0d
+        name: my-go
+        resources: {}
+status: {}
